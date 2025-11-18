@@ -1,0 +1,8 @@
+streamlit
+opencage
+requests
+pandas
+geopandas
+folium
+plotly
+streamlit_folium

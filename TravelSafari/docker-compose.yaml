@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  route-backend:
+    build:
+      context: ./backend
+    container_name: route-backend
+    ports:
+      - "8000:8000"
+    restart: always
+
+  travel-frontend:
+    build:
+      context: ./frontend
+    container_name: travel-frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - route-backend
+    restart: always
