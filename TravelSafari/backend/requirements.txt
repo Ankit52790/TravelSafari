@@ -3,3 +3,8 @@ uvicorn
 pydantic
 sqlite-utils
 python-dotenv
+sqlalchemy>=2.0
+passlib[bcrypt]
+python-jose
+
+
